@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <title>HMRC - Capgemini</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800i" rel="stylesheet">
+</head>
+
+<body class="home" role="document">
+  <div class="wrapper">
+    <header class="header-primary" role="banner">
+      <nav aria-label="Navigation" class="primary-navigation" role="navigation">
+        <ul>
+          <li role="menuitem"><img src="./assets/mini-crown.jpg" alt="HM Revenue & Customs"></li>
+          <li role="menuitem">HM Revenue & Customs</li>
+        </ul>
+      </nav>
+    </header><!-- end .primary -->
+    <main role="main">
+      <section class="home-main">
+        <article role="article">
+          <h1>Renew your tax credits</h1>
+          <!-- Main form -->
+          <form role="form">
+            <!-- National insurance number fieldset -->
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="col-12">
+                <div class="col-3">
+                  <p>Your National Insurance number</p>
+                </div>
+                <div class="col-9">
+                  <p>
+                    <a title="Show me where to find this" href="#" role="link" class="primary">Show me where to find
+                      this</a>
+                  </p>
+                </div>
+                <input type="text" placeholder="Ex : QQ123456C">
+              </div>
+              <div class="col-10">
+                <p>Your tax credits renewal number is the 15 digit number on the bottom right hand corner of your
+                  annual declaration. Enter it below.</p>
+                <figure>
+                  <img src="./assets/doc.jpg" alt="subscribe to this form" />
+                </figure>
+                <div class="triangle"></div>
+                <div class="circle">012345678912345</div>
+              </div>
+            </fieldset>
+            <!-- Tax credits renewal number fieldset -->
+            <fieldset>
+              <legend>Your tax credits renewal number</legend>
+              <!-- Maxlength does not work with "type=number" property so a bit of JS is needed here -->
+              <input type="number" placeholder="Ex : 012345678912345">
+            </fieldset>
+            <button role="button">Next</button>
+          </form>
+          <footer>
+            <p><a href="#" title="Get help with this page">Get help with this page</a></p>
+          </footer>
+        </article>
+      </section><!-- end .home-main -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="primary" role="contentinfo">
+      <nav aria-label="Secondary" class="col-9">
+        <ul class="upper">
+          <li><a href="" role="link" title="Help">Help</a></li>
+          <li><a href="" role="link" title="Cookies">Cookies</a></li>
+          <li><a href="" role="link" title="Privacy policy">Privacy policy</a></li>
+          <li><a href="" role="link" title="Terms and conditions">Terms and conditions</a></li>
+        </ul>
+        <ul class="lower">
+          <li>
+            <span>OGL</span> All content is available under the <a href="" title="Open Government Licence v2.0">Open
+              Government Licence v2.0</a> except where otherwhise stated
+          </li>
+        </ul>
+      </nav>
+      <div class="col-3 fr crownCopyRight">
+        <img src="./assets/big-crown-lions.jpg" alt="Crown copyright">
+        <p>&copy; Crown Copyright</p>
+      </div>
+    </footer><!-- end .primary -->
+  </div><!-- end .wrapper-->
+
+  <!-- All the HMRC exported stuff goes here... :-) -->
+  <script src="./bundle.js"></script>
+</body>
+
+</html>
