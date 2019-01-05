@@ -1,0 +1,117 @@
+/* =======================================================================
+ This file is created by Chechu Castro [chechu@digitatis.com]
+ FILE NAME: custom.scss
+======================================================================= */
+
+.wrapper {
+	margin: 0 auto;
+	padding: 1rem;
+	header {
+		nav {
+			&.primary-navigation {
+				ul {
+					li{
+						display: inline;
+						&:last-child{
+							position: relative;
+							bottom: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		section {
+			&.home-main {
+				article {
+					form{
+						margin: 1rem 0;
+						fieldset{
+							figure{
+								margin: 1rem 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*Main footer*/
+	footer.primary {
+		background-color: $footer-bg-color;
+		overflow: hidden;
+		margin-top: 1rem;
+		&.primary{
+			nav{
+				position: relative;
+				top:8rem;
+				ul{
+					&.upper{
+						margin-bottom: 2rem;
+						li{
+							display: inline;
+							padding: 0 1rem;
+						}
+					}
+					&.lower{
+						li{
+							span{
+								font-weight: bold;
+								font-size: 1.7em;
+								padding: 0 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Mobile
+@media only screen and (max-width: 768px) {
+	.wrapper{
+		footer.primary {
+			&.primary {
+				nav {
+					top:0;
+					ul {
+						&.upper {
+							margin: 1rem;
+							li{
+								padding: 0 0.3rem;
+								a{
+									font-size: 0.8em;
+								}
+							}
+						}
+						&.lower {
+							li {
+								text-align: center;
+								margin: 0.5rem;
+								display: block;
+								line-height: 1.5em;
+								span {
+									display: block;
+									text-align: center;
+									margin: 1rem 0;
+								}
+							}
+						}
+					}
+				}
+				.crownCopyRight {
+					img{
+						display: block;
+						margin: 0 auto;
+						max-width: 25%;
+					}
+					p{
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

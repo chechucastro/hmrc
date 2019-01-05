@@ -1,0 +1,74 @@
+/* =======================================================================
+ This file is created by Chechu Castro [chechu@digitatis.com]
+ FILE NAME: custom.scss
+======================================================================= */
+[class*="col-"] {
+	margin: 0.5rem 0;
+	float: left;
+}
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+fieldset{
+	position: relative;
+	margin:1rem 0;
+}
+legend {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+p {
+	font-size: 1em;
+}
+a{
+	color: $link-standard;
+}
+a.primary {
+	color: $link-primary;
+	@extend p
+}
+
+input {
+	background-color: $inputs-primary--bg;
+	padding: 0.5rem;
+	min-width: 12%;
+}
+
+button {
+	background-color: $btn-primary--bg;
+	color: $btn-primary--txt;
+	padding: 0.5rem;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 62px 103.6px 67px 0;
+  border-color: transparent #007bff transparent transparent;
+  transform: rotate(100deg);
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+}
+.circle{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	font-size: 1em;
+	color: $link-primary;
+	line-height: 150px;
+	text-align: center;
+	background: #fff;
+	border:2px solid #000;
+	position: absolute;
+	bottom: 1rem;
+	left: 11rem;
+}
+.fr{
+	float: right;
+}
